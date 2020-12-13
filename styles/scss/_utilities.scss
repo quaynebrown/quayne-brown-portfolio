@@ -1,0 +1,54 @@
+// fonts
+    $font-pompiere: 'Pompiere', cursive;
+    $font-lato: 'Lato', sans-serif;
+
+// colors
+    $dark: #32333c;
+    $light: #ffffff;
+    $primary-color: #f0f0f0;
+    $secondary-accent: #FAD759;
+    $primary-accent: #10b3ff;
+    $h1-color: #022144;
+
+// bg-image url
+    // $blog-header-bg-image: '../../shoe-kloset-assets/blog-header.jpg';
+
+// mixins
+    // font styles
+        @mixin font-styles($name, $size: 2rem, $weight: 400) {
+            font-family: $name;
+            font-size: $size;
+            font-weight: $weight;
+        }
+
+    // headings style
+        @mixin heading-style ($size, $name: $font-pompiere){
+            font-size: $size;
+            font-family: $name;
+            text-transform: uppercase;
+            font-weight: 200;
+            color: $plum-purple;
+        }
+
+    // only used for blog and contact page
+        @mixin header-style($url, $bg-height: 70vh) {
+            background-image: url($url);
+            height: $bg-height;
+
+            .heading-one-container{
+                justify-content: center;
+            }
+
+            h1{
+                text-transform: uppercase;
+                @include heading-style(8rem);
+            }
+        }
+
+    // anchor buttons
+        @mixin anchor-button($bg-color, $color: $white){
+            text-transform: uppercase;
+            padding: 10px 20px;
+            background-color: $bg-color;
+            color: $color;
+        }

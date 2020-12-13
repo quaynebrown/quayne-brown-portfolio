@@ -1,0 +1,18 @@
+
+body{
+    font-size: 1.55rem;
+    font-family: 'Roboto', sans-serif;
+    color: $dark;
+    background-color: $primary-color;
+}
+.wrapper{
+    width:90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    color: $primary-accent;
+    font-size: 4rem;
+    font-family: 'Black Ops One', cursive;
+}

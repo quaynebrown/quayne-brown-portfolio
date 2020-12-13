@@ -1,0 +1,50 @@
+header{
+    height: 100vh;
+    background-image: url(../assets/quayne-profile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    nav{
+        background-color: $light;
+        box-shadow: 0 0 10px $dark;
+    }
+
+    .logo-container{
+        background-color: $primary-accent;
+        padding: 10px 20px;
+        .logo{
+            color: $light;
+        }
+    }
+
+    .nav-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul{
+        padding-right: 20px;
+    }
+
+    li{
+        display: inline-block;
+        padding: 0 20px;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    h1{
+        color: $h1-color;
+        font-size: 5rem;
+    }
+
+    .banner{
+        border: 1px solid lightblue;
+        display: inline-block;
+        padding: 30px;
+        position: absolute;
+        right: 20px;
+    }
+}
