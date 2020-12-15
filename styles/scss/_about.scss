@@ -1,0 +1,26 @@
+.about{
+    background-color: $light;
+}
+
+.filled-link{
+    margin-top: 40px;
+    @include btn($primary-accent, $light, $primary-accent);
+}
+
+.about-content{
+    display: flex;
+
+    article{
+        flex: 1
+    };
+
+    article:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p:last-of-type{
+        margin-bottom: 40px;
+    }
+}

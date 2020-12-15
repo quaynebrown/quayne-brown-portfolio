@@ -1,13 +1,13 @@
 
 body{
-    font-size: 1.55rem;
+    font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     color: $dark;
-    background-color: $primary-color;
+    background-color: $light;
 }
 .wrapper{
     width:90%;
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -15,4 +15,15 @@ body{
     color: $primary-accent;
     font-size: 4rem;
     font-family: 'Black Ops One', cursive;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main > section,
+.contact{
+    padding: 80px 0;
 }

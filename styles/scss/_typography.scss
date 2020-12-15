@@ -1,10 +1,32 @@
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 h2{
     font-size: 4rem;
     text-align: center;
+}
+
+// h2::before{
+//     content: "";
+//     position: absolute;
+//     bottom: -175px;
+//     right: 50%;
+//     width: 100px;
+//     height: 4px;
+//     background: $primary-accent;
+//     z-index: 100;
+//     transform: translateX(50%);
+// }
+
+h4{
+    margin: 0;
+    padding-right: 5px;
+}
+
+p{
+    line-height: 2;
 }
 
 a{
@@ -14,5 +36,6 @@ a{
 
 a:hover,
 a:focus{
-    color: $primary-accent;
+    color: $light;
+    background-color: $primary-accent;
 }

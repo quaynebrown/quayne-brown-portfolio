@@ -45,10 +45,11 @@
             }
         }
 
-    // anchor buttons
-        @mixin anchor-button($bg-color, $color: $white){
-            text-transform: uppercase;
-            padding: 10px 20px;
+    // anchor / buttons
+        @mixin btn($color, $bg-color, $border){
+            padding: 12px 30px;
             background-color: $bg-color;
+            border: 1px solid $border;
             color: $color;
+            border-radius: 3px;
         }

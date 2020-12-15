@@ -1,12 +1,17 @@
 header{
     height: 100vh;
-    background-image: url(../assets/quayne-profile.jpg);
+    background: url(../assets/quayne-inner-shadow.png), linear-gradient(142deg, rgba(79,79,79,1) 2%, rgba(255,255,255,1) 100%); 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 50px;
+    
     nav{
         background-color: $light;
         box-shadow: 0 0 10px $dark;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 10000;
     }
 
     .logo-container{
@@ -41,10 +46,18 @@ header{
     }
 
     .banner{
-        border: 1px solid lightblue;
         display: inline-block;
         padding: 30px;
         position: absolute;
         right: 20px;
+    }
+}
+
+@media(max-width: 880px){
+    header{
+        background-size: cover;
+        background-position-x: left;
+        background: url('../assets/quayne-inner-shadow-sm-portrait.png'), linear-gradient(142deg, rgba(79,79,79,1) 2%, rgba(255,255,255,1) 100%);
+        background-repeat: no-repeat;
     }
 }

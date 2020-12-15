@@ -1,0 +1,24 @@
+.skills{
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+}
+
+.skills,
+.skills ul{
+    background-color: $primary-accent;
+}
+
+.list-of-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    i{
+        font-size: calc((1vw * 2) + 3rem);
+    }
+
+    li{
+        width: calc(100% / 3);
+        padding: 20px;
+        text-align: center;
+    }
+}
