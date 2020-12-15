@@ -1,9 +1,52 @@
 footer{
     background-color: $primary-color;
+
+    i{
+        font-size: 1.6rem;
+        color: $font-color;
+    }
+
+    .social-contacts{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    li{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dce2ed;
+
+        
+    }
+
+    li:hover,
+    li:focus{
+        background-color: $primary-accent;
+        i{
+            color: $light;
+        }
+    }
+}
+
+.social{
+    // background-color: rgb(246, 248, 252);
+    padding: 50px;
+    order: -1;
+    flex: 1 2 50%;
+    p{
+        text-align: center;
+    }
 }
 
 form{
     margin-top: 80px;
+    flex: 1 1 50%;
 }
 
 .contact-detail{
@@ -83,4 +126,9 @@ button:focus{
     a{
         color: inherit;
     }
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
 }

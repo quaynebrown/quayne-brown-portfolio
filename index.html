@@ -20,22 +20,31 @@
                     <span class="logo">Q.</span>
                 </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" title="Home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="contact-link-container">
+                    <a href="#contact">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </nav>
         <!-- NAV END -->
 
-        <!-- BANNER START -->
-        <div class="banner">
-            <h1>Quayne Brown</h1>
-            <h3>Web Developer</h3>
+        <div class="wrapper banner-container">
+            <!-- BANNER START -->
+            <div class="banner">
+                <div class="triangle"></div>
+                <div class="triangle test"></div>
+                <h1>Quayne Brown</h1>
+                <h3>Web Developer</h3>
+            </div>
+            <!-- BANNER END -->
         </div>
-        <!-- BANNER END -->
     </header>
     <!-- HEADER END -->
 
@@ -45,7 +54,13 @@
         <section id="about" class="about">
             <div class="wrapper about-content">
                 <article>
-                    <h2>About me</h2>
+                    <div class="heading-container">
+                        <h2>About me</h2>
+                    </div>
+                    <!-- <i class="fas fa-music"></i>
+                    <i class="fas fa-headphones"></i>
+                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-sitemap"></i> -->
                 </article>
                 <article>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ex excepturi? Odio quibusdam mollitia eius perspiciatis, inventore aliquam sapiente itaque repellendus est doloribus animi dignissimos deserunt voluptates vero sequi ullam.</p>
@@ -62,50 +77,43 @@
         <section id="skills" class="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
-                <!-- 
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fas fa-envelope"></i>
-                 -->
-                
-                <!-- in your body -->
+
                 <ul class="list-of-skills">
                     <li>
                         <i class="devicon-html5-plain"></i>
-                        <p>HTML 5</p>
+                        <p class="sr-only">HTML 5</p>
                     </li>
                     <li>
                         <i class="devicon-css3-plain"></i>
-                        <p>CSS 3</p>
+                        <p class="sr-only">CSS 3</p>
                     </li>
                     <li>
                         <i class="devicon-sass-original"></i>
-                        <p>SASS</p>
+                        <p class="sr-only">SASS</p>
                     </li>
                     <li>
                         <i class="devicon-javascript-plain"></i>
-                        <p>JavaScript</p>
+                        <p class="sr-only">JavaScript</p>
                     </li>
                     <li>
                         <i class="devicon-react-original"></i>
-                        <p>ReactJS</p>
+                        <p class="sr-only">ReactJS</p>
                     </li>
                     <li>
                         <i class="devicon-jquery-plain"></i>
-                        <p>jQuery</p>
+                        <p class="sr-only">jQuery</p>
                     </li>
                     <li>
                         <i class="devicon-git-plain"></i>
-                        <p>Git</p>
+                        <p class="sr-only">Git</p>
                     </li>
                     <li>
                         <i class="devicon-github-original"></i>
-                        <p>Github</p>
+                        <p class="sr-only">Github</p>
                     </li>
                     <li>
-                        <i class="devicon-slack-plain-wordmark"></i>
-                        <p>Slack</p>
+                        <i class="fas fa-universal-access"></i>
+                        <p class="sr-only">Accessibility</p>
                     </li>
                 </ul>
             </div>
@@ -115,12 +123,14 @@
         <!-- PORTFOLIO START -->
         <section id="portfolio" class="portfolio">
             <div class="wrapper">
-                <h2>Portfolio</h2>
+                <div class="heading-container">
+                    <h2>Portfolio</h2>
+                </div>
 
                 <ul class="list-of-portfolio">
                     <li>
                         <figure>
-                            <img src="./assets/ptoperty-management.jpg" alt="">
+                            <img src="./assets/ptoperty-management.jpg" alt="Preview of Property Management Portal">
                         </figure>
                         <article>
                             <h3>Property Management Portal</h3>
@@ -154,11 +164,10 @@
                             <div class="tech-container">
                                 <h4>Technologies used:</h4>
                                 <ul class="tech-used">
-                                    <li>HTML5<span> | </span></li>
-                                    <li>CSS<span> | </span></li>
                                     <li>React<span> | </span></li>
                                     <li>Javascript<span> | </span></li>
-                                    <li>Firebase</li>
+                                    <li>Axios<span> | </span></li>
+                                    <li>SCSS</li>
                                 </ul>
                             </div>
                             <p>
@@ -167,10 +176,10 @@
                             </p>
 
                             <div class="link-container">
-                                <a href="https://quaynebrown.github.io/quayne-brown-project-five/" target="_blank" class="filled-link"><i
+                                <a href="https://detective-pokemon.github.io/swetha-stephen-quayne-project-five/" target="_blank" class="filled-link"><i
                                         class="far fa-play-circle"></i> Live</a>
                             
-                                <a href="https://github.com/quaynebrown/quayne-brown-project-five" target="_blank" class="filled-link"><i
+                                <a href="https://github.com/detective-pokemon/swetha-stephen-quayne-project-five" target="_blank" class="filled-link"><i
                                         class="fab fa-github"></i> Github</a>
                             </div>
                         </article>
@@ -216,36 +225,77 @@
     <footer>
         <section id="contact" class="contact">
             <div class="wrapper">
-                <h2>Contact me</h2>
+                <div class="heading-container">
+                    <h2>Contact me</h2>
+                </div>
                 <!-- FORM START -->
-                <form>
-                    <div class="contact-detail">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Type your name" required>
+                <div class="contact-container">
+                    <form>
+                        <div class="contact-detail">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Type your name" required>
+                            </div>
+                            <!-- <div>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone-number" placeholder="Type your phone number" required>
+                            </div> -->
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" placeholder="Type your email" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number" placeholder="Type your phone number" required>
+    
+                        <div class="message-container">
+                            <label for="message">You message</label>
+                            <textarea name="message" id="message" required placeholder="Type your message"></textarea>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Type your email" required>
+    
+                        <div class="btn-container">
+                            <button>Send message</button>
                         </div>
-                    </div>
+                    </form>
+                    <!-- FORM END -->
 
-                    <div class="message-container">
-                        <label for="message">You message</label>
-                        <textarea name="message" id="message" required placeholder="Type your message"></textarea>
-                    </div>
+                    <article class="social">
+                        <div class="wrapper">
+                            <div class="logo-container">
+                                <h2 class="logo">Q.</h2>
+                            </div>
+                    
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p>
+                    
+                            <ul class="social-contacts">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/quaynebrownprofile/">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/CoderQuayne">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/hazza_ovarave/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:quayne.brown@gmail.com">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
 
-                    <div class="btn-container">
-                        <button>Send message</button>
-                    </div>
-                </form>
-                <!-- FORM END -->
+                </div>
             </div>
         </section>
+
+        
 
         <section class="credit">
             <div class="wrapper">

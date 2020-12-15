@@ -6,6 +6,22 @@ html{
 h2{
     font-size: 4rem;
     text-align: center;
+    font-weight: 700;
+}
+
+.heading-container{
+    position: relative;
+}
+
+h2::before{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    background-color: $primary-accent;
+    transform: translateX(-50%);
 }
 
 // h2::before{
@@ -27,6 +43,8 @@ h4{
 
 p{
     line-height: 2;
+    color: $font-color;
+    font-weight: 400;
 }
 
 a{
@@ -34,8 +52,3 @@ a{
     text-decoration: none;
 }
 
-a:hover,
-a:focus{
-    color: $light;
-    background-color: $primary-accent;
-}
