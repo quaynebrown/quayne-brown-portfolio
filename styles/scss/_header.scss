@@ -13,11 +13,27 @@ header{
         top:0;
         left: 0;
         z-index: 10000;
+
+         a::before{
+            content: '';
+            position: absolute;
+            top: 55px;
+            z-index: 9999999;
+            border-bottom: 0.2rem solid $primary-accent;
+            width: 0;
+            transition: width 0.3s;
+        }
+
+        a:hover::before{
+            width: 30px;
+            transition: width 0.3s;
+        }
     }
     
     .logo-container{
         padding: 15px 10px;
     }
+
     
     .contact-link-container{
         padding: 28px;
@@ -53,10 +69,12 @@ header{
         color: $h1-color;
         font-size: 5rem;
     }
+
     h3{
         font-size: 3.5rem;
         text-shadow: 2px 2px $light;
     }
+
     h1,h3{
         position: relative;
         z-index: 100;

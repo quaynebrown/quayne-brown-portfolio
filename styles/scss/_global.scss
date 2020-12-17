@@ -28,8 +28,13 @@ main > section,
 }
 
 main{
+    a{
+        transition: color 0.3s, background-color 0.3s ease-out;
+    }
+
     a:hover,
     a:focus{
         @include btn($light, $primary-accent, $primary-accent);
+        transition: color 0.3s, background-color 0.3s;
     }
 }

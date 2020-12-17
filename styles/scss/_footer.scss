@@ -21,15 +21,17 @@ footer{
         justify-content: center;
         align-items: center;
         background-color: #dce2ed;
-
+        transition: background-color 0.4s;
         
     }
 
     li:hover,
     li:focus{
         background-color: $primary-accent;
+        transition: background-color 0.7s;
         i{
             color: $light;
+            transition: color 0.3s;
         }
     }
 }
@@ -51,7 +53,8 @@ form{
 
 .contact-detail{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
 
     div{
         display: flex;
@@ -67,13 +70,12 @@ form{
 
 label{
     display: block;
-    margin-bottom: 20px;
+    margin: 28px 0 10px 0;
     text-transform: uppercase;
 }
 
 
-.btn-container, 
-.message-container{
+.btn-container{
     margin-top: 40px;
 }
 
@@ -106,12 +108,14 @@ textarea:focus{
 button{
     @include btn($light, $primary-accent, $primary-accent);
     text-transform: uppercase;
+    transition: color 0.2s ease-in 0.1s, background-color 0.3s;
 }
 
 button:hover,
 button:focus{
     color: $primary-accent;
     background-color: $light;
+    transition: color 0.2s ease-in 0.1s, background-color 0.3s;
 }
 
 .credit{
@@ -125,6 +129,12 @@ button:focus{
 
     a{
         color: inherit;
+        transition: color 0.3s;
+    }
+
+    a:hover{
+        color: $light;
+        transition: color 0.3s;
     }
 }
 

@@ -11,6 +11,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    p{
+        color: $dark;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
     
     i{
         font-size: calc((1vw * 2) + 3rem);
@@ -18,7 +24,14 @@
 
     li{
         width: calc(100% / 3);
-        padding: 50px;
+        padding: 10px;
         text-align: center;
     }
+
+    li:hover p{
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+
 }
+

@@ -18,6 +18,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        div{
+            position: relative;
+        }
+
+        h2::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 9rem;
+            border-bottom: 4px solid $primary-accent;
+            width: 100px;
+        }
     }
 
     p:last-of-type{

@@ -16,25 +16,12 @@ h2{
 h2::before{
     position: absolute;
     content: "";
-    bottom: -10px;
-    left: 50%;
+    left: calc(50% - 50px);
+    top: 6rem;
+    border-bottom: 4px solid $primary-accent;
     width: 100px;
-    height: 4px;
-    background-color: $primary-accent;
-    transform: translateX(-50%);
 }
 
-// h2::before{
-//     content: "";
-//     position: absolute;
-//     bottom: -175px;
-//     right: 50%;
-//     width: 100px;
-//     height: 4px;
-//     background: $primary-accent;
-//     z-index: 100;
-//     transform: translateX(50%);
-// }
 
 h4{
     margin: 0;
@@ -50,5 +37,15 @@ p{
 a{
     color: $dark;
     text-decoration: none;
+    transition: color 0.3s;
 }
+
+a:hover,
+a:focus{
+    color: $primary-accent;
+    transition: color 0.3s;
+}
+
+
+
 
