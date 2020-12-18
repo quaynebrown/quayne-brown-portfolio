@@ -1,8 +1,12 @@
+// preload from (Red Stapler) https://redstapler.co/add-loading-animation-to-website/
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+});
+
 const app = {
     menuBtn: '',
     menuOpen: false
 };
-
 
 app.handleHoverIn =  function() {
     $(this).find('div').addClass('toggle-btn');
