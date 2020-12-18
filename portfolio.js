@@ -3,10 +3,6 @@ const app = {
     menuOpen: false
 };
 
-setTimeout(function () {
-    $('.preload').fadeToggle();
-}, 2500);
-
 
 app.handleHoverIn =  function() {
     $(this).find('div').addClass('toggle-btn');
