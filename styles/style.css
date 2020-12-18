@@ -530,12 +530,16 @@ header h1, header h3 {
   background-color: #10b3ff;
   position: absolute;
   z-index: 5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .tri-2 {
   background-color: #FAD759;
   right: 60px;
   z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 990px) {
@@ -604,6 +608,8 @@ header h1, header h3 {
     position: absolute;
     top: 60px;
     left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   header h1, header h3 {
     top: 0;
@@ -611,6 +617,8 @@ header h1, header h3 {
   header .tri-2 {
     right: initial;
     left: -3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 

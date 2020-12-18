@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -54,7 +55,7 @@
     <!-- MAIN START -->
     <main>
         <!-- ABOUT ME START -->
-        <section id="about" class="about">
+        <section id="about" class="about" data-aos="fade-up" >
             <div class="wrapper about-content">
                 <article>
                     <div>
@@ -74,7 +75,7 @@
         <!-- ABOUT ME END -->
 
         <!-- SKILLS START -->
-        <section id="skills" class="skills">
+        <section id="skills" class="skills" data-aos="fade-in">
             <div class="wrapper">
                 <h2>Skills</h2>
 
@@ -123,11 +124,11 @@
         <!-- PORTFOLIO START -->
         <section id="portfolio" class="portfolio">
             <div class="wrapper">
-                <div class="heading-container">
+                <div class="heading-container" data-aos="fade-up">
                     <h2>Portfolio</h2>
                 </div>
 
-                <div class="portfolio-container">
+                <div class="portfolio-container" data-aos="fade-left">
                     <article>
                         <h3>Property Management Portal</h3>
                         <h4>Technologies used</h4>
@@ -201,7 +202,7 @@
 
     <!-- FOOTER START -->
     <footer>
-        <section id="contact" class="contact">
+        <section id="contact" class="contact" data-aos="fade-up">
             <div class="wrapper">
                 <div class="heading-container">
                     <h2>Contact me</h2>
@@ -210,7 +211,7 @@
                 <div class="contact-container">
                     <form>
                         <div class="contact-detail">
-                            <div>
+                            <div data-aos="fade-left">
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" placeholder="Type your name" required>
                             </div>
@@ -218,13 +219,13 @@
                                 <label for="phone-number">Phone Number</label>
                                 <input type="tel" name="phone-number" id="phone-number" placeholder="Type your phone number" required>
                             </div> -->
-                            <div>
+                            <div data-aos="fade-left">
                                 <label for="email">Email</label>
                                 <input type="text" name="email" id="email" placeholder="Type your email" required>
                             </div>
                         </div>
     
-                        <div class="message-container">
+                        <div class="message-container" data-aos="fade-left">
                             <label for="message">You message</label>
                             <textarea name="message" id="message" required placeholder="Type your message"></textarea>
                         </div>
@@ -285,6 +286,7 @@
 
     <!-- jQuery CDN -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./portfolio.js"></script>
 </body>
 </html>

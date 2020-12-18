@@ -165,12 +165,14 @@ header{
     background-color: $primary-accent;
     position: absolute;
     z-index: 5;
+    transition: all 0.5s ease-in-out;
 }
 
 .tri-2{
     background-color: $secondary-accent;
     right: 60px;
     z-index: 10;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -235,6 +237,7 @@ header{
             position: absolute;
             top: 60px;
             left: 0;
+            transition: all 0.5s ease-in-out;
         }
 
         h1, h3{
@@ -244,6 +247,7 @@ header{
         .tri-2{
             right: initial;
             left: -3px;
+            transition: all 0.5s ease-in-out;
         }
         
     }
