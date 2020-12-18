@@ -6,10 +6,12 @@ const app = {
 
 app.handleHoverIn =  function() {
     $(this).find('div').addClass('toggle-btn');
+    $(this).find('a').removeClass('project-links');
 }
 
 app.handleHoverOut = function(){
     $(this).find('div').removeClass('toggle-btn');
+    $(this).find('a').addClass('project-links');
 }
 
 app.eventHandlers = () => {
@@ -44,7 +46,7 @@ app.init = () => {
 $(() => {
     app.init();
     AOS.init({
-        duration: 500,
-        delay: 200
+        duration: 1200,
+        offset: 300
     });
 })
