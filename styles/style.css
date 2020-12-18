@@ -839,11 +839,6 @@ header h1, header h3 {
   transition: opacity 0.8s;
 }
 
-.project-links {
-  -webkit-transform: translateY(9999999px);
-          transform: translateY(9999999px);
-}
-
 .toggle-btn {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-out;
