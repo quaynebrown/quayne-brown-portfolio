@@ -29,6 +29,70 @@ header{
             transition: width 0.3s;
         }
     }
+
+    .menu-btn{
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn-burger{
+        width: 40px;
+        height: 4px;
+        background-color: $light;
+        border-radius: 5px;
+        box-shadow: 0 2px #999999;
+        transition: all 0.5s ease-in-out;
+    }
+
+    
+    .menu-btn-burger::before,
+    .menu-btn-burger::after{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        border-radius: 5px;
+        box-shadow: 0 2px #999999;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-btn-burger::before{
+        transform: translateY(16px);
+    }
+    
+    .menu-btn-burger::after{
+        transform: translateY(-16px);
+    }
+
+    .menu-btn:hover 
+    .menu-btn-burger::before,
+    .menu-btn:hover  
+    .menu-btn-burger::after,
+    .menu-btn:hover  
+    .menu-btn-burger{
+        background-color: $primary-accent;
+    }
+    
+    // menu animation
+    .menu-btn.open .menu-btn-burger{
+        transform: translateX(-50px);
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .menu-btn.open .menu-btn-burger::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    
+    .menu-btn.open .menu-btn-burger::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
     
     .logo-container{
         padding: 15px 10px;
@@ -111,11 +175,51 @@ header{
 }
 
 
-@media(max-width: 880px){
+@media(max-width: $tablet){
     header{
         background-size: 100%;
         background: url('../assets/quayne-inner-shadow-sm-portrait.png'), linear-gradient(top left, #fafafa 2%, rgb(235, 235, 235) 100%);
         background-repeat: no-repeat;
         background-position: bottom;
+
+        .menu-btn{
+            display: flex;
+            margin: 10px
+        }
+
+        .nav-content{
+            @include wrapper(100%);
+            position: relative;
+        }
+
+        .contact-link-container{
+            display: none;
+        }
+
+        ul{
+            position: absolute;
+            top: -300px;
+            display: flex;
+            flex-direction: column;
+            background-color: $light;
+            width: 100%;
+            padding-top: 50px;
+            transition: top 0.5s ease-in-out;
+        }
+
+        .show-dropdown{
+            top: 60px;
+            transition: top 0.5s ease-in-out;
+        }
+
+        li{
+            flex-basis: 40px;
+            position: relative;
+        }
+
+        nav a::before{
+            top: 20px;
+        }
     }
 }
+

@@ -6,7 +6,18 @@
     $primary-accent: #10b3ff;
     $h1-color: #022144;
     $font-color: #707b90;
+    
+// viewport
+    $tablet : 990px;
+    $tablet-sm: 768px;
+    $mobile-landscape: 640px;
 
+// wrapper
+    @mixin wrapper ($wrapper-percent){
+        width:$wrapper-percent;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
 
 // anchor / buttons
     @mixin btn($color, $bg-color, $border){
@@ -16,3 +27,4 @@
         color: $color;
         border-radius: 3px;
     }
+
