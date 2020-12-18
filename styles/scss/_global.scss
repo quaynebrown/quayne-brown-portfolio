@@ -12,6 +12,8 @@ body{
     color: $primary-accent;
     font-size: 4rem;
     font-family: 'Black Ops One', cursive;
+    position: relative;
+    z-index: 999;
 }
 
 ul {

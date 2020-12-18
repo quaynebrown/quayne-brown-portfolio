@@ -43,7 +43,7 @@ header{
 
     .menu-btn-burger{
         width: 40px;
-        height: 4px;
+        height: 2px;
         background-color: $light;
         border-radius: 5px;
         box-shadow: 0 2px #999999;
@@ -56,7 +56,7 @@ header{
         content: '';
         position: absolute;
         width: 40px;
-        height: 4px;
+        height: 2px;
         border-radius: 5px;
         box-shadow: 0 2px #999999;
         transition: all 0.5s ease-in-out;
@@ -76,7 +76,7 @@ header{
     .menu-btn-burger::after,
     .menu-btn:hover  
     .menu-btn-burger{
-        background-color: $primary-accent;
+        background-color: $secondary-accent;
     }
     
     // menu animation
@@ -167,20 +167,23 @@ header{
     z-index: 5;
 }
 
-.test{
+.tri-2{
     background-color: $secondary-accent;
     right: 60px;
     z-index: 10;
-    opacity: .8;
 }
 
 
 @media(max-width: $tablet){
     header{
         background-size: 100%;
-        background: url('../assets/quayne-inner-shadow-sm-portrait.png'), linear-gradient(top left, #fafafa 2%, rgb(235, 235, 235) 100%);
         background-repeat: no-repeat;
         background-position: bottom;
+
+        nav{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
 
         .menu-btn{
             display: flex;
@@ -212,14 +215,46 @@ header{
             transition: top 0.5s ease-in-out;
         }
 
+        .show-list-items{
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out 0.4s;
+        }
+
         li{
+            opacity: 0;
             flex-basis: 40px;
             position: relative;
+            transition: opacity 0.3s ease-in;
         }
 
         nav a::before{
             top: 20px;
         }
+
+        .banner {
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+
+        h1, h3{
+            top: 0;
+        }
+
+        .tri-2{
+            right: initial;
+            left: -3px;
+        }
+        
     }
 }
 
+
+@media (max-width: $mobile-landscape){
+    header{
+        .triangle{
+            width: 250px;
+            height: 280px;
+        }
+    }
+}

@@ -302,6 +302,8 @@ body {
   color: #10b3ff;
   font-size: 4rem;
   font-family: 'Black Ops One', cursive;
+  position: relative;
+  z-index: 999;
 }
 
 ul {
@@ -385,7 +387,7 @@ header .menu-btn {
 
 header .menu-btn-burger {
   width: 40px;
-  height: 4px;
+  height: 2px;
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px #999999;
@@ -399,7 +401,7 @@ header .menu-btn-burger::after {
   content: '';
   position: absolute;
   width: 40px;
-  height: 4px;
+  height: 2px;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px #999999;
           box-shadow: 0 2px #999999;
@@ -423,7 +425,7 @@ header .menu-btn:hover
 .menu-btn-burger::after,
 header .menu-btn:hover
 .menu-btn-burger {
-  background-color: #10b3ff;
+  background-color: #FAD759;
 }
 
 header .menu-btn.open .menu-btn-burger {
@@ -530,20 +532,21 @@ header h1, header h3 {
   z-index: 5;
 }
 
-.test {
+.tri-2 {
   background-color: #FAD759;
   right: 60px;
   z-index: 10;
-  opacity: .8;
 }
 
 @media (max-width: 990px) {
   header {
     background-size: 100%;
-    background: url("../assets/quayne-inner-shadow-sm-portrait.png"), -webkit-gradient(linear, left top, right bottom, color-stop(2%, #fafafa), to(#ebebeb));
-    background: url("../assets/quayne-inner-shadow-sm-portrait.png"), linear-gradient(top left, #fafafa 2%, #ebebeb 100%);
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  header nav {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   header .menu-btn {
     display: -webkit-box;
@@ -581,13 +584,40 @@ header h1, header h3 {
     -webkit-transition: top 0.5s ease-in-out;
     transition: top 0.5s ease-in-out;
   }
+  header .show-list-items {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out 0.4s;
+    transition: opacity 0.5s ease-in-out 0.4s;
+  }
   header li {
+    opacity: 0;
     -ms-flex-preferred-size: 40px;
         flex-basis: 40px;
     position: relative;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
   }
   header nav a::before {
     top: 20px;
+  }
+  header .banner {
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  header h1, header h3 {
+    top: 0;
+  }
+  header .tri-2 {
+    right: initial;
+    left: -3px;
+  }
+}
+
+@media (max-width: 640px) {
+  header .triangle {
+    width: 250px;
+    height: 280px;
   }
 }
 
@@ -645,13 +675,9 @@ header h1, header h3 {
 
 .about-content article:first-child i {
   position: absolute;
-}
-
-.about-content article:first-child .fa-headphones {
-  color: #FAD759;
-  top: 0.5rem;
-  font-size: 30rem;
-  opacity: 0.2;
+  color: #fdefbc;
+  top: 3rem;
+  font-size: 24rem;
 }
 
 .about-content h2 {
@@ -663,7 +689,7 @@ header h1, header h3 {
   position: absolute;
   content: "";
   left: 0;
-  top: 6rem;
+  top: 5.5rem;
   border-bottom: 4px solid #10b3ff;
   width: 100px;
   -webkit-transition: left 0.5s ease-in-out;
@@ -937,8 +963,8 @@ textarea {
 }
 
 input, textarea {
-  -webkit-box-shadow: 4px 4px 8px #32333c;
-          box-shadow: 4px 4px 8px #32333c;
+  -webkit-box-shadow: 0 2px 5px #32333c;
+          box-shadow: 0 2px 5px #32333c;
   border-radius: 3px;
   padding: 20px;
   border: none;
@@ -946,8 +972,8 @@ input, textarea {
 
 input:focus,
 textarea:focus {
-  -webkit-box-shadow: 2px 2px 8px #10b3ff;
-          box-shadow: 2px 2px 8px #10b3ff;
+  -webkit-box-shadow: 0 2px 5px #10b3ff;
+          box-shadow: 0 2px 5px #10b3ff;
 }
 
 button {
