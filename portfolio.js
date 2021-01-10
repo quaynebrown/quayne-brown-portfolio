@@ -50,7 +50,7 @@ app.init = () => {
 $(() => {
     app.init();
     AOS.init({
-        duration: 1200,
-        offset: 300
+        duration: 700,
+        offset: 100
     });
 })
